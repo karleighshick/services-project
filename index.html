@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eloheh - Our Healthcare Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f8fb;
+      color: #333;
+    }
+    header {
+      background-color: #0d4d5c;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header img {
+      max-width: 90%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    header p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #dce7eb;
+    }
+    .services {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .service {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .service h2 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #0d4d5c;
+      padding: 1rem;
+      cursor: pointer;
+      position: relative;
+    }
+    .service h2::after {
+      content: "▼";
+      position: absolute;
+      right: 1rem;
+      color: #ff5722;
+      transition: transform 0.3s;
+    }
+    .service.open h2::after {
+      transform: rotate(180deg);
+    }
+    .service ul {
+      display: none;
+      padding: 0 1.5rem 1rem 2rem;
+      list-style: disc;
+      color: #555;
+    }
+    .service.open ul {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+    .contact-link {
+      color: #0d4d5c;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Healthcare Services</h1>
+    <!-- Header image -->
+    <img src="https://via.placeholder.com/800x300.png?text=Eloheh+Healthcare" alt="Eloheh Healthcare" />
+    <p>
+      At Eloheh, we believe in whole-person wellness — offering care that nurtures the body, mind, and spirit. 
+      Explore our wide range of services designed to bring balance and health to your life.
+    </p>
+  </header>
+
+  <main class="services">
+    <!-- 1 -->
+    <div class="service">
+      <h2>Primary & Preventative Care Services</h2>
+      <ul>
+        <li>Annual health check-ups & screenings</li>
+        <li>Chronic disease management (diabetes, hypertension, heart health)</li>
+        <li>Vaccination & immunization clinics</li>
+        <li>Preventative lab testing (cholesterol, blood sugar, hormone balance)</li>
+        <li>Women’s health services (wellness exams, prenatal support)</li>
+        <li>Men’s health services (prostate screenings, vitality programs)</li>
+        <li>Pediatric wellness check-ups</li>
+      </ul>
+    </div>
+
+    <!-- 2 -->
+    <div class="service">
+      <h2>Mental & Emotional Health Services</h2>
+      <ul>
+        <li>Individual and family counseling</li>
+        <li>Group therapy sessions (stress, grief, addiction recovery support)</li>
+        <li>Tele-therapy and virtual mental health coaching</li>
+        <li>Stress management workshops</li>
+        <li>Mindfulness & meditation programs</li>
+        <li>Trauma-informed care services</li>
+        <li>Substance abuse recovery programs</li>
+      </ul>
+    </div>
+
+    <!-- 3 -->
+    <div class="service">
+      <h2>Holistic & Integrative Health Services</h2>
+      <ul>
+        <li>Nutritional counseling and meal planning</li>
+        <li>Herbal medicine consultations</li>
+        <li>Acupuncture & traditional healing therapies</li>
+        <li>Yoga, tai chi, and movement therapy classes</li>
+        <li>Reiki, energy healing, and sound therapy</li>
+        <li>Sleep health consultations</li>
+        <li>Preventative lifestyle coaching</li>
+      </ul>
+    </div>
+
+    <!-- 4 -->
+    <div class="service">
+      <h2>Community & Outreach Programs</h2>
+      <ul>
+        <li>Mobile health clinics (for rural or underserved areas)</li>
+        <li>Health fairs and free wellness screenings</li>
+        <li>School-based health education (nutrition, exercise, mental health awareness)</li>
+        <li>Workplace wellness programs (stress reduction, ergonomics, resilience training)</li>
+        <li>Chronic illness support groups</li>
+        <li>Indigenous health and wellness knowledge-sharing sessions</li>
+      </ul>
+    </div>
+
+    <!-- 5 -->
+    <div class="service">
+      <h2>Specialized Services</h2>
+      <ul>
+        <li>Physical therapy & rehabilitation</li>
+        <li>Pain management clinics (non-opioid, holistic focus)</li>
+        <li>Maternal & child health programs</li>
+        <li>Geriatric care services (aging gracefully, fall prevention, memory support)</li>
+        <li>Hospice and palliative care with holistic emphasis</li>
+        <li>Integrative oncology support (nutrition, mindfulness, alternative therapies alongside treatment)</li>
+        <li>Telehealth urgent care</li>
+      </ul>
+    </div>
+
+    <!-- 6 -->
+    <div class="service">
+      <h2>Wellness & Lifestyle Services</h2>
+      <ul>
+        <li>Fitness and movement classes (personalized programs)</li>
+        <li>Smoking cessation programs</li>
+        <li>Weight management and metabolic health services</li>
+        <li>Digital health app support (tracking habits, coaching through an Eloheh app)</li>
+        <li>Corporate wellness partnerships</li>
+        <li>Retreats focused on rest, renewal, and holistic health</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact us: <a class="contact-link" href="mailto:carter@example.com">carter@example.com</a></p>
+    <p>Last modified: <script>document.write(document.lastModified);</script></p>
+  </footer>
+
+  <script>
+    // Accordion effect for dropdowns
+    document.querySelectorAll(".service h2").forEach((heading) => {
+      heading.addEventListener("click", () => {
+        heading.parentElement.classList.toggle("open");
+      });
+    });
+  </script>
+</body>
+</html>
